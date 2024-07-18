@@ -1,18 +1,18 @@
-@media ( min-width: 768px) {
+@media (min-width: 768px) {
     .menu-toggle {
         display: none;
-        
+
     }
 }
 
-.menu{
+.menu {
     display: flex;
     justify-content: center;
     gap: 58px;
     list-style: none;
 }
 
-.page-header{
+.page-header {
     padding-top: 39px;
     padding-bottom: 39px;
     border-radius: 5px;
@@ -22,36 +22,73 @@
 
 @media (max-width: 767px) {
 
-    .menu{
+    .menu {
         display: none;
     }
-    
+
 }
 
 
 .menu-toggle {
-margin: 0;
-padding: 0;
-background-color: transparent;
-border: none;
-outline: none;
-border-radius: 50%;
-cursor: pointer;
-min-width: 40px;
-min-height: 40px;
-display: flex;
-align-items: center;
-justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    cursor: pointer;
+    min-width: 40px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
-.page-container{
+.page-container {
     padding-left: 30px;
 }
 
-.menu-toggle:hover, .menu-toggle:focus{
+.menu-toggle:hover,
+.menu-toggle:focus {
     background-color: darkgrey;
 }
 
-    
-   
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: hotpink;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    transform: translateX(100%);
+    transition: transform 588MS ease-in-out;
+    padding: 32px;
+}
+
+
+.menu-container.is-open {
+    transform: translateX(0)
+}
+
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    font-size: 20px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.mobile-nenu,
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+.menu-container .menu-toggle {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
