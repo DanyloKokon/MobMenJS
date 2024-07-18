@@ -1,0 +1,57 @@
+@media ( min-width: 768px) {
+    .menu-toggle {
+        display: none;
+        
+    }
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    gap: 58px;
+    list-style: none;
+}
+
+.page-header{
+    padding-top: 39px;
+    padding-bottom: 39px;
+    border-radius: 5px;
+    background-color: coral;
+
+}
+
+@media (max-width: 767px) {
+
+    .menu{
+        display: none;
+    }
+    
+}
+
+
+.menu-toggle {
+margin: 0;
+padding: 0;
+background-color: transparent;
+border: none;
+outline: none;
+border-radius: 50%;
+cursor: pointer;
+min-width: 40px;
+min-height: 40px;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.page-container{
+    padding-left: 30px;
+}
+
+.menu-toggle:hover, .menu-toggle:focus{
+    background-color: darkgrey;
+}
+
+    
+   
